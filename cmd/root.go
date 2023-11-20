@@ -39,7 +39,7 @@ func NewRootCommand(out io.Writer) *cobra.Command {
 	cfg.Load()
 	cmd := &cobra.Command{
 		Use:   "go-adc",
-		Short: "Tool to work with ADC64 devices",
+		Short: "Tool to work with TQDC16 devices",
 		PersistentPreRun: func(cmd *cobra.Command, args []string) {
 			if logLevel != "" {
 				cfg.LogLevel = logLevel
